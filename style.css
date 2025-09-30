@@ -1,0 +1,138 @@
+/* FUENTES Y RESET */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #0D1B2A;
+}
+
+/* HEADER */
+header {
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+header nav a {
+    color: #FFFFFF;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+header nav a:hover {
+    color: #F07C00;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 0;
+}
+section .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card h3 {
+    color: #0D1B2A;
+}
+.card p {
+    color: #333333;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+form button {
+    background-color: #F07C00;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+form button:hover {
+    background-color: #d96b00;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: 700;
+}
+.whatsapp img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0D1B2A;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
